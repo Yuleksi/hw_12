@@ -1,0 +1,36 @@
+@import "./common";
+@import "./components/header";
+@import "./components/banner";
+
+body {
+  margin: 0;
+
+  div.wrapper{
+    @include my-mixin(black, 100px);
+    @extend %extend-example;
+
+    .container{
+      @include my-mixin(black, 100px);
+      //color: red;
+      @extend %extend-example;
+    }
+
+    .green{
+      @include my-mixin(black, 100px);
+      //color: green;
+      @extend %extend-example;
+    }
+  }
+
+
+  *{
+  box-sizing:border-box;}
+
+  a{
+    display: inline-block;
+  }
+
+  img{
+    display: block;
+  }
+}
